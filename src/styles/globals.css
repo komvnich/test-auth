@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, 
+p, 
+div,
+section,
+aside,
+::placeholder, input, ol, ul{
+  padding: 0;
+  border: 0;
+}
+
+/* Works on Firefox */
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00b96b;
+  border-radius: 20px;
+}
+
+button{
+  color: #000 !important;
+}
+
